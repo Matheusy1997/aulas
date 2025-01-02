@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div#container{
+            width: 40%;
+            height: 40%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+
+        div > form > p {
+            margin-top: 30px;
+            padding: 20px;
+            background: black;
+            color: white;
+            border-radius: 20px;
+            text-shadow: 2px 2px 4px white;
+            border: 1px solid black;
+        }
+
+        #btnMostrar{
+            padding: 1px 5px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Programa Olá Você!</h1>
+        <form action="" autocomplete="off">
+            <p>
+                <label for="inNome">Nome</label>
+                <input type="text" name="nome" id="inNome">
+                <input type="submit" value="Mostrar" id="btnMostrar">
+            </p>
+        </form>
+        <h3></h3>
+    </div>
+
+    <script src="js/ex2_1.js"></script>
+</body>
+</html>
