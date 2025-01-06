@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Caixa Eletronico</title>
+    <style>
+        div#container{
+            display: flex;
+        }
+        img{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <dib id="img">
+            <img src="img/caixa-eletronico-isolado-no-fundo-branco_1308-108169.avif" alt="caixa-eletronico">
+        </dib>
+        <div id="frm">
+            <h1>Programa Caixa Eletrônico</h1>
+            <form action="">
+                <p>
+                    <label for="inSaque">Valor do Saque R$: </label>
+                    <input type="number" name="saque" id="inSaque">
+                </p>
+                <p>
+                    <button type="submit">Exibir Notas para Saque</button>
+                </p>
+            </form>
+            <h3 id="resp1"></h3>
+            <h3 id="resp2"></h3>
+            <h3 id="resp3"></h3>
+        </div>
+    </div>
+    <script src="js/ex04-6.js"></script>
+</body>
+</html>
