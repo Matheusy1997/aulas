@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de condicionais</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            display: inline;
+            border-radius: 20px;
+        }
+        div{
+            display: inline-block;
+            vertical-align: top;
+            text-indent: 20px;
+            background-color: rgb(243, 213, 174);
+            border-radius: 20px;
+            padding: 10px 30px;
+            height: 300px;
+           
+        }
+
+        h1{
+            text-indent: 0px;
+            border-bottom-style: inset;
+            border-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="img/gettyimages-1368595082-170667a.jpg" alt="balnaça">
+    <div>
+        <h1>Programa Cálculo do Peso Ideal</h1>
+        <form action="">
+            <p>
+                <label for="inNome">Nome:</label> 
+                <input type="text" name="inNome" id="inNome" required placeholder="Digite seu nome">
+            </p>
+            <p>
+                <label for="inSexoMasculino">Sexo</label>
+                <input type="radio" name="sexo" id="inSexoMasculino" required>
+                <label for="inSexoMasculino">Masculino</label>
+                <input type="radio" name="sexo" id="inSexoFeminino" required>
+                <label for="inSexoFeminino">Feminino</label>
+            </p>
+            <p>
+                <label for="inAltura">Altura:</label> <input type="number" name="altura" id="inAltura" min="0" step="0.01" required placeholder="Digite sua altura"></label>
+            </p>
+            <p>
+                <input type="submit" value="Calcular Peso Ideal">
+                <input type="reset" value="Limpar Campo">
+            </p>
+        </form>
+        <h3></h3>
+    </div>
+
+
+    <script src="js/ex04-2.js"></script>
+</body>
+</html>

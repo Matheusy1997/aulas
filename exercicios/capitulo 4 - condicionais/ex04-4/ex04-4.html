@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 4.4</title>
+
+    <style>
+        div#container{
+            display: flex;
+        }
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="img/3628070-globo-terra-desenho-autocolante-fundo-branco-gratis-vetor.jpg"
+        alt="globo"
+      />
+      <div>
+        <h1>Program Fuso Horário</h1>
+        <form action="">
+            <p>
+                <label for="inHora">Hora no Brasil (h.m): </label>
+                <input type="number" name="hora" id="inHora" min="0" max="23.59" step="0.01" required>
+            </p>
+            <p>
+                <input type="submit" value="Exibir Hora na França">
+            </p>
+        </form>
+        <h3></h3>
+      </div>
+    </div>
+
+    <script src="js/ex04-4.js"></script>
+  </body>
+</html>
