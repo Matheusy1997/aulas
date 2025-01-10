@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 6.1</title>
+    <style>
+        h1{
+            border-bottom: 1px solid gray;
+        }
+        .fonte-azul{
+            color: blue;
+        }
+        .oculta{
+            display: none;
+        }
+        .exibe{
+            display: inline;
+        }
+        .italico{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consultório Odontológico</h1>
+    <form action="">
+        <p>
+            <label for="inPaciente">Paciente:</label>
+            <input type="text" name="paciente" id="inPaciente" required placeholder="Digite o nome do paciente" autofocus>
+            <input type="submit" value="Adicionar">
+            <input type="button" value="Urgência" id="btnUrgencia">
+            <input type="button" value="Atender" id="btnAtender">
+        </p>
+    </form>
+    <h3>
+        Em Atendimento:
+        <span class="fonte-azul"></span>
+    </h3>
+    <pre></pre>
+    <script src="js/ex06-1.js"></script>
+</body>
+</html>
