@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos 6.3</title>
+</head>
+<body>
+    <h1>Revenda Herbie</h1>
+    <form action="">
+        <p>
+            <label for="inModelo">Modelo:</label>
+            <input type="text" name="modelo" id="inModelo" required autofocus>
+        </p>
+        <p>
+            <label for="inPreco">Preço R$:</label>
+            <input type="number" name="preco" id="inPreco" required step="0.01">
+            <input type="submit" value="Adicionar">
+        </p>
+        <p>
+            <input type="button" value="Listar Todos" id="btListar">
+            <input type="button" value="Filtrar pro Preço" id="btFiltrar">
+            <input type="button" value="Simular Promoção" id="btSimular">
+        </p>
+    </form>
+    <pre></pre>
+    <script src="js/ex06-3.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 const frm = document.querySelector("form")
 const respErros = document.querySelector("#outErros")
 const respChances = document.querySelector("#outChances")
-const respDica = document.querySelector("outDica")
+const respDica = document.querySelector("#outDica")
 
 const erros = []
 const sorteado = Math.floor(Math.random() * 100) + 1
@@ -15,7 +15,7 @@ frm.addEventListener("submit", (e) => {
         frm.btSubmit.disabled = true
         frm.btNovo.className = "exibe"
     }else{
-        if(erros.inclides(numero)){ // se número existe no vetor erros (já apostou)
+        if(erros.includes(numero)){ // se número existe no vetor erros (já apostou)
             alert(`Você já apostou o número ${numero}. Tente outro...`)
         }else{
             erros.push(numero) // adiciona número ao vetor
