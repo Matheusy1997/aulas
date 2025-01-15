@@ -21,3 +21,6 @@ console.log(numbers);
 console.log(multiplica);
 console.log(multiplica2);
 console.log(numberCres);
+
+const nomeVazio = ""
+console.log(nomeVazio)
