@@ -7,13 +7,11 @@ frm.addEventListener("submit", (e) => {
     e.preventDefault() // evita envio do form
 
     const dataVenc = frm.inDataVenc.value;
-    console.log(dataVenc)
     const valor = Number(frm.inValor.value);
     const hoje = new Date(); // cria variáveis (instancia objetos)
     const vencto = new Date() // do tipo Date()
 
     const partes = dataVenc.split("-") // data vem no formato aaaa-mm-dd
-    console.log(partes)
     vencto.setDate(Number(partes[2]))
     vencto.setMonth(Number(partes[1]) - 1)
     vencto.setFullYear(Number(partes[0]))
