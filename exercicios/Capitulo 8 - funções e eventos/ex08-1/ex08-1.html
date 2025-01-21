@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 8.1</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        const resp = document.querySelector("h1")
+        const situacao = (nota, media = 7) => (nota >= media ? "Aprovado" : "Reprovado")
+
+        const prova1 = Number(prompt("Qual a nota: "))
+
+        const aluno1 = situacao(prova1, 7)
+
+        resp.innerText = `Situação: ${aluno1}`
+    </script>
+</body>
+</html>
