@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 8.7</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <h1>Veterinário Avenida</h1>
+    <form action="">
+        <p>
+            <label for="inValor">Valor da Vacina: </label>
+            <input type="number" name="vacina" id="inValor" required>
+        </p>
+        <p>
+            <label for="inPossui">Possui Convênio</label>
+            <input type="radio" name="inPossui" id="rbSim" checked> Sim
+            <input type="radio" name="inPossui" id="rbNao"> Não
+        </p>
+        <p id="outConvenio">
+            <label for="inConvenio">Convênio: </label>
+            <select name="convenio" id="inConvenio">
+                <option value="Amigo dos Animais">Amigo dos Animais</option>
+                <option value="Saude Animal">Saúde Animal</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Calcular Desconto">
+        </p>
+    </form>
+    <h3 id="outResp1"></h3>
+    <h3 id="outResp2"></h3>
+    <script src="js/ex08-8.js"></script>
+</body>
+</html>
