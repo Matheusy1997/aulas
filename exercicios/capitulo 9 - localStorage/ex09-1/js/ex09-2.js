@@ -2,6 +2,7 @@ const frm = document.querySelector("form");
 const imClube = document.querySelector("#imgClube");
 const dvTitulo = document.querySelector("#divTitulo");
 const inRadios = document.querySelectorAll("input");
+const resp = document.querySelector("h3");
 
 const trocarClube = () => {
   const clubes = ["Brasil", "Pelotas", "Farroupilha"];
@@ -52,5 +53,19 @@ const verificarClube = () => {
     trocarClube();
   }
 };
+
+const numeroVisita = () => {
+  let numeroVisita = localStorage.setItem("numeroVisita", 0)
+  if(localStorage.getItem("numeroVisita") == 0){
+    resp.innerText = `Muito Bem-Vindo! Esta é a sua primeira visita ao nosso site.`
+    numeroVisita = localStorage.setItem("numeroVisita", 1)
+  }else{
+    resp.innerText = `Que bom que você voltou! Esta é a sua visita de número ${numeroVisita} ao nosso site.`
+    let numero = 2
+    localStorage.setItem("numeroVisita", toString(numero))
+  }
+}
+
+numeroVisita()
 // ao carregar a página, verifica se cliente já selecionou clube anteriormente
 window.addEventListener("load", verificarClube);
