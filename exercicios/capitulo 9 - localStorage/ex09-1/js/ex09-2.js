@@ -55,14 +55,15 @@ const verificarClube = () => {
 };
 
 const numeroVisita = () => {
-  let numeroVisita = localStorage.setItem("numeroVisita", 0)
-  if(localStorage.getItem("numeroVisita") == 0){
+  let numeroVisita = localStorage.getItem("numeroVisita")
+  if(!localStorage.getItem("numeroVisita")){
+    numeroVisita = 1
+    numeroVisita = localStorage.setItem("numeroVisita", numeroVisita)
     resp.innerText = `Muito Bem-Vindo! Esta é a sua primeira visita ao nosso site.`
-    numeroVisita = localStorage.setItem("numeroVisita", 1)
   }else{
-    resp.innerText = `Que bom que você voltou! Esta é a sua visita de número ${numeroVisita} ao nosso site.`
-    let numero = 2
-    localStorage.setItem("numeroVisita", toString(numero))
+    numeroVisita = parseInt(numeroVisita) + 1
+    localStorage.setItem("numeroVisita", numeroVisita)
+    resp.innerText = `Que bom que você voltou! Esta é a sua visita de número ${parseInt(numeroVisita)} ao nosso site.`
   }
 }
 

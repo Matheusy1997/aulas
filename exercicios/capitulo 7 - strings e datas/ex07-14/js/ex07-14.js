@@ -6,7 +6,7 @@ frm.addEventListener("submit", (e) => {
     e.preventDefault(); // evita envio do form
     let dataInfracao = frm.inDataInfracao.value;
     let multa = Number(frm.inValorMulta.value);
-    
+    console.log(dataInfracao)
     const dataIndracaoObj = new Date(dataInfracao);
 
     dataIndracaoObj.setDate(dataIndracaoObj.getDate() + 90)
